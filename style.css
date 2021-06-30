@@ -1,0 +1,152 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* @media screen and (min-width:420px){
+  
+  body {
+    background-color: aqua;
+  }
+  .row::after {
+    background-color: blue;
+  }
+} */
+
+@media (max-width: 420px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    font-size: 12px;
+  }
+
+  h1, h3, div {
+    letter-spacing: 1px;
+  }
+  #steps .row .left,
+  #steps .row .right,
+  #steps .row .central {
+    width: 100%;
+  }
+  .row {
+   width: 100%;
+   margin-top: 0;
+  }
+
+  #lezioni .row,
+  #why .row {
+    background-color: #e4e4a9;
+  }
+
+  #lezioni,
+  #why {
+    background-color: beige;
+  }
+  .container .row img {
+    height: 100px;
+    padding: 10px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #why > div > h1,
+  #steps > div > h1,
+  #lezioni > div > h1 {
+    padding-top: 10px;
+  }
+
+  hr {
+    margin-bottom: 10px;
+  }
+
+  #why .row h3 {
+    margin: 0px;
+  }
+    
+  #why {
+    background-color: #e4e4a9;
+  }  
+
+  #why .row>.first, #why .row>.second, #why .row>.third {
+    margin-top: 0px;
+  } 
+}  
